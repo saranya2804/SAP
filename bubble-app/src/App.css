@@ -1,0 +1,86 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main App Container */
+.App {
+  position: relative;
+  width: 100%;
+  height: auto; /* Allow the height to grow with content */
+  display: flex;
+  flex-direction: column; /* Allow vertical stacking */
+  color: #fff;
+  text-align: center;
+}
+
+/* Full Viewport Sections */
+.full-viewport {
+  width: 100%;
+  height: 100vh; /* Each section occupies full viewport height */
+  position: relative; /* Ensure each section is positioned correctly */
+}
+
+/* Bubble Canvas */
+.bubbleCanvas {
+  position: fixed; /* Fixes canvas to the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Keep the canvas above all sections */
+  pointer-events: none; /* Allow interaction with underlying elements */
+}
+
+/* Section Background Colors */
+.bubble-section {
+  background-color: rgba(173, 216, 230, 0.9); /* Light blue for bubble section */
+}
+
+.section-2 {
+  background-color: #ff6347; /* Tomato */
+}
+
+.section-3 {
+  background-color: #4682b4; /* Steel Blue */
+}
+
+.section-4 {
+  background-color: #32cd32; /* Lime Green */
+}
+
+.section-5 {
+  background-color: #9370db; /* Medium Purple */
+}
+
+/* Heading Styles */
+h1 {
+  margin: auto;
+  padding-top: 20%;
+  font-size: 3rem;
+}
+.full-viewport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  color: #fff; /* White text for contrast */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some padding */
+}
+
+h1 {
+  margin-bottom: 10px; /* Spacing below headings */
+  font-size: 2.5rem; /* Responsive heading size */
+}
+
+p {
+  font-size: 1.2rem; /* Responsive paragraph size */
+  max-width: 600px; /* Limit paragraph width for better readability */
+}
